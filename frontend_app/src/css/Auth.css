@@ -1,0 +1,190 @@
+.wrap-login100 .col-md-6, .wrap-login100 .col-md-12, .wrap-login100 .row{
+    padding: 0;
+    margin: 0;
+}
+.wrap-login100 .row{
+    min-height: 700px;
+}
+.my-wrap-input {
+    position: relative;
+    border-bottom: 2px solid rgba(255,255,255,0.24);
+    margin-bottom: 30px;
+}
+.my-input {
+    font-family: Poppins-Regular;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;  
+    display: block;
+    height: 45px;
+    background: transparent;
+    padding: 0 20px;
+}
+input:-internal-autofill-selected, input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    background-color: rgb(30 64 175) !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    box-shadow: 0 0 0 30px rgb(30 64 175) inset !important;
+    -webkit-box-shadow: 0 0 0 30px rgb(30 64 175) inset !important;
+    -moz-box-shadow: 0 0 0 30px rgb(30 64 175) inset !important;
+}
+.input100, .wrap-input100{
+    width: 100%;
+}
+.input50, .wrap-input50{
+    width: 48%;
+    display: inline;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+.wrap-input100 input:focus{
+    padding-bottom: 0px;
+}
+.wrap-input50-m{
+    margin-right: 18px;
+}
+.nav-tabs {
+    margin-bottom: 40px;
+    border: none;
+}
+.nav-tabs .nav-item {
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding: 25px 0;
+    color: #ddd;
+    cursor: pointer;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+.nav-tabs .nav-item.active {
+    color: #fff;
+    font-weight: 700;
+    border-bottom-color: #fff;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+.form-container{
+    padding: 0 40px 60px;
+}
+.login100-form{
+    display: none;
+}
+.login100-form.active{
+    display: block;
+}
+input:focus{
+    background-color: rgb(232, 240, 254);
+    color: #000;
+}
+.my-submit-btn{
+    box-shadow: 0px 3px 20px #0000000b;
+    position: relative;
+    border-radius: 0.375rem;
+    border-color: transparent;
+    background-color: rgb(255 255 255);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.15em;
+
+}
+.my-submit-btn:hover{
+    opacity: .9;
+}
+.wrap-input100-image{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.24);
+    margin: 20px auto;
+    display: block;
+    padding: 20px;
+}
+.wrap-input100-image button{
+    padding: 10px 20px;
+    margin: 20px 10px;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+    background: transparent;
+}
+.wrap-image-label{
+    color: #fff;
+    position: relative;
+    left: 6px;
+    bottom: -28px;
+    padding: 0 12px;
+    background-color: rgb(30 64 175);
+    z-index: 99;
+}
+.wrap-login100 .row > div {
+    max-height: 700px;
+}
+.wrap-login100 .row .l-side{
+    overflow: hidden;
+}
+.wrap-login100 .row .r-side{
+    overflow: scroll;
+    box-shadow: inset 0px -2px 8px #333;
+}
+.hidden{
+    display: none !important;
+}
+.alert.alert-danger li {
+    list-style-type: disclosure-closed;
+    padding-left: 5px;
+    margin: 0 12px;
+    font-size: 12px;
+}
+.form-check.form-check-inline p {
+    color: #fff;
+    font-size: 16px;
+}
+.source-box {
+    box-shadow: 0px 3px 20px #0000000b;
+    position: relative;
+    border-radius: 0.375rem;
+    border-color: transparent;
+    background-color: rgb(255 255 255);
+    padding: 0.5rem;
+}
+.source-nav {
+    display: flex;
+    width: 100%;
+}
+.source-nav li {
+    flex: 1 1 0%;
+    cursor: pointer;
+}
+.source-nav .nav-link.active {
+    background-color: rgb(30 64 175);
+    font-weight: 500;
+    color: rgb(255 255 255);
+}
+.source-nav .nav-link {
+    border-radius: 0.375rem;
+    border-width: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    display: block;
+    border-width: 1px;
+    border-color: transparent;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: rgb(51 65 85);
+}
+.url-container {
+    display: flex;
+    padding: 20px;
+}
+.url-container input {
+    width: 70%;
+    margin-right: 10px;
+    font-size: .8em;
+}
+.url-container button {
+    margin: 0;
+    width: 30%;
+}

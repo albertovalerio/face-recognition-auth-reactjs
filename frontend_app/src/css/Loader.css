@@ -1,0 +1,56 @@
+.loader {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0005;
+    z-index: 3;
+    transition: visibility 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.loader svg {
+    position: relative;
+}
+.loader-dialog {
+    width: 90%;
+    transition: margin-top 0s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -14rem;
+    margin-bottom: 4rem;
+}
+.loader-content{
+    position: relative;
+    width: 100%;
+    border-radius: 0.375rem;
+    background-color: rgb(255 255 255);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.loader-body{
+    padding: 2.5rem;
+    text-align: center;
+}
+.loader-body p {
+    font-size: 2em;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #000;
+}
+.loader-body img{
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 640px){
+    .loader-dialog {
+        width: 460px;
+    }    
+}
+@media (max-width: 991px){
+    .loader {
+        height: 158vh;
+    }    
+}

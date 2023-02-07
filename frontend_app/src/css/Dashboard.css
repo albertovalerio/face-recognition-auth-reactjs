@@ -1,0 +1,241 @@
+.dashboard{
+    border-radius: 30px;
+    padding: 0px 40px;
+    min-height: 100vh;
+    min-width: 0px;
+    flex: 1 1 0%;
+    background-color: rgb(241 245 249 / 1);
+    box-shadow: 0px 3px 20px #0000000b;
+}
+.my-box{
+    box-shadow: 0px 3px 20px #0000000b;
+    border-radius: 0.375rem;
+    background-color: #fff;
+    padding: 25px;
+}
+.left-side{
+    height: 100vh;
+    margin: 30px 0;
+    text-align: center;
+}
+.left-side:before {
+    content: "";
+    background-color: rgb(30 64 175);
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+.left-side button{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(226 232 240);
+}
+.left-side .image-container, .right-side .image-container{
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 1;
+}
+.left-side .image-container img, .right-side .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9999px;
+    max-width: 100%;
+}
+.left-side .image-container img {
+    border: 6px solid #fff;
+}
+.user-container{
+    padding: 10px 0 20px;
+    border-bottom: 1px solid rgb(226 232 240);
+}
+.user-container h4 {
+    text-transform: capitalize;
+}
+.right-side {
+    padding-left: 40px;
+    margin: 30px 0;
+}
+.my-box .heading{
+    padding: 0 0 1.25rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(226 232 240 / 1);
+}
+.my-box .heading h2{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-right: auto;
+}
+.my-box .info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.image-container .my-icon{
+    padding: 0.5rem;
+    background-color: rgb(30 64 175);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+.image-container .upload {
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 60px;
+}
+.image-container .upload svg{
+    fill: #ccc;
+    width: 2.2rem;
+    opacity: .6;
+}
+.image-container .upload:hover svg, .image-container .upload:hover p{
+    opacity: 1;
+}
+.image-container .upload p{
+    font-size: 13px;
+    opacity: .8;
+}
+.image-container .upload span{
+    color: rgb(30 64 175);
+    font-size: 13px;
+    font-weight: 600;
+}
+.overflow-x-auto{
+    overflow-x: auto;
+}
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+.table .alert {
+    font-size: .8em;
+    padding: 6px;
+}
+.table-bordered thead th, .table-bordered thead td{
+    text-align: center;
+}
+#photo_A_container canvas, #photo_B_container canvas, .net-container canvas{
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.net-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.net-container .canvas-container{
+    margin: 0 10px;
+}
+.alert.distance-score{
+    font-size: 1.5em;
+}
+.net-container .canvas-container .badge{
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.table td {
+    vertical-align: middle;
+}
+.similarity-test .nav-tabs .nav-item{
+    padding: 25px 0 0;
+    border-bottom-width: 1px !important;
+}
+.similarity-test .nav-tabs{
+    margin-bottom: 0;
+}
+.similarity-test .nav-tabs .nav-link{
+    border-color: rgb(255 255 255) rgb(255 255 255) rgb(30 64 175);
+    padding: 20px;
+    color: #212529;
+    opacity: .6;
+}
+.similarity-test .nav-tabs .nav-link.active{
+    border-color: rgb(30 64 175) rgb(30 64 175) rgb(255 255 255);
+    opacity: 1;
+}
+.similarity-test .hidden {
+    display: none;
+}
+.similarity-test .input-group button {
+    border: 1px solid #ddd;
+    font-size: 2em;
+    padding: 6px 18px;
+}
+.similarity-test .input-group .spinner-up {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.similarity-test .input-group .spinner-down {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.similarity-test .input-group input {
+    text-align: center;
+    background-color: rgb(232, 240, 254);
+    color: #000;
+    font-size: 1.5em;
+}
+.similarity-test .tab-panel > div {
+    border: 1px solid;
+    border-color: rgb(255 255 255) rgb(30 64 175) rgb(30 64 175);
+    padding: 30px 20px;
+}
+.similarity-test .my-submit-btn {
+    background-color: rgb(30 64 175);
+    color: rgb(255 255 255);
+}
+@media all and (max-width:553px) {
+    .similarity-test .nav-tabs .nav-link{
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+@media all and (max-width:992px){
+    .right-side {
+        padding-left: 0px;
+    }
+    .left-side{
+        height: 100%;
+    }
+}
+.mismatch img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.mismatch span {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    overflow-wrap: break-word;
+}
+.similarity-test .table-bordered thead th, .similarity-test .table-bordered thead td {
+    width: 50%;
+}
