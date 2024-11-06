@@ -20,7 +20,7 @@ export const Login = ({enableInput}) => {
     const manageForm = (e) => {
         e.preventDefault()
         dispatch(setAuthError({login:{serverErr:null}}))
-        validateInputs() 
+        validateInputs()
         if(
             error.login.email == null &&
             password != null &&
@@ -58,7 +58,7 @@ export const Login = ({enableInput}) => {
 
     return(
         <form className={'login100-form ' + (activeTab === 'login' ? 'active' : '')}>
-                            
+
             <div className="my-wrap-input wrap-input100" onClick={() => enableInput('login-email')}>
                 <input
                     type="email"
@@ -66,7 +66,7 @@ export const Login = ({enableInput}) => {
                     id="login-email"
                     className="my-input input100"
                     placeholder="Email"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={email || ''}
                     onChange={(e) => dispatch(setLoginEmail(e.target.value))}
                 />
@@ -79,7 +79,7 @@ export const Login = ({enableInput}) => {
                     id="login-password"
                     className="my-input input100"
                     placeholder="Password"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={password || ''}
                     onChange={(e) => dispatch(setLoginPassword(e.target.value))}
                 />

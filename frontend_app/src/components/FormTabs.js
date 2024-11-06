@@ -13,7 +13,7 @@ export const FormTabs = () => {
         const el = document.getElementById(elementId)
         el.disabled = false
         el.focus()
-    } 
+    }
 
     return(
         <>

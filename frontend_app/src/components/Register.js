@@ -85,7 +85,7 @@ export const Register = ({enableInput}) => {
 
     return(
         <form className={'login100-form ' + (activeTab === 'register' ? 'active' : '')}>
-            
+
             <div className="my-wrap-input wrap-input50 wrap-input50-m" onClick={() => enableInput('name')}>
                 <input
                     type="text"
@@ -93,7 +93,7 @@ export const Register = ({enableInput}) => {
                     id="name"
                     className="my-input input50"
                     placeholder="Name"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={name || ''}
                     onChange={(e) => dispatch(setRegisterName(e.target.value))}
                 />
@@ -106,7 +106,7 @@ export const Register = ({enableInput}) => {
                     id="register-email"
                     className="my-input input50"
                     placeholder="Email"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={email || ''}
                     onChange={(e) => dispatch(setRegisterEmail(e.target.value))}
                 />
@@ -119,7 +119,7 @@ export const Register = ({enableInput}) => {
                     id="register-password"
                     className="my-input input50"
                     placeholder="Password"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={password || ''}
                     onKeyUp={validatePassword}
                     onChange={(e) => dispatch(setRegisterPassword(e.target.value))}
@@ -133,7 +133,7 @@ export const Register = ({enableInput}) => {
                     id="repeat-password"
                     className="my-input input50"
                     placeholder="Repeat Password"
-                    disabled={isFirefox ? false : true}
+                    disabled={false}
                     value={repeatPassword || ''}
                     onChange={(e) => dispatch(setRegisterRepeatPassword(e.target.value))}
                 />
